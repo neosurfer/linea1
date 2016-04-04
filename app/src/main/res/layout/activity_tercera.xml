@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/inicio"
+    tools:context="com.example.bsolanoa.contador.tercera"
+    >
+    <!--layout general-->
+    <LinearLayout
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--layout de contenido-->
+        <LinearLayout
+
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp">
+            <!--layout superior-->
+            <LinearLayout
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="0dp">
+                <!--layout de los spinners-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/tv_estacion"
+                        android:textStyle="bold"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Seleccione Estacion:"/>
+                    <Spinner
+                        android:id="@+id/s3_estacion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/borde"
+                        android:layout_marginTop="4dp">
+                    </Spinner>
+                </LinearLayout>
+                <!--fin layout spinners-->
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_height="0dp">
+                    <TextView
+                        android:id="@+id/tv_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:textStyle="bold"
+                        android:text="Descripción:"/>
+                    <EditText
+                        android:id="@+id/et_descripcion"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:padding="5dp"
+                        android:gravity="top"
+                        android:background="@drawable/border_edittext"
+                        android:layout_marginTop="4dp"
+                        android:hint="Ingrese una descripción...">
+                    </EditText>
+                </LinearLayout>
+
+                <!--layout de los botones-->
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_guardar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="GUARDAR"/>
+                </LinearLayout>
+            <!--fin layout botones-->
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btn_descargar3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="DESCARGAR"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
